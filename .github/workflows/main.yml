@@ -11,9 +11,13 @@ jobs:
         run: pwd
       - name: 'show files inside'
         run: ls -al
-      # - name: Checkout code
-      #   uses: actions/checkout@v2
-      # - name: Cache dependencies
+      - name: Checkout code
+        uses: actions/checkout@v2
+       #- name: Cache dependencies
+      - name: 'test Base Path'
+        run: pwd
+      - name: 'show files inside'
+        run: ls -al
       #   uses: actions/cache@v1
       #   with:
       #     path: ~/.composer/cache/files
